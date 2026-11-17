@@ -16,4 +16,4 @@ drop table 'tb_pasien'(
 INSERT INTO 'tb_pasien'('id_pasien','nama_lengkap','email','no_telepon','alamat','password','status_pasien')
 VALUES
 (1,'Rina Saftri','rina@gmail.com','081234567891','Jl.Merdeka Sehat No.10,Jakarta','','Aktif'),
-()
+(2,'Deni Pratama','dani@gmail.com','08127495799',Jl.
