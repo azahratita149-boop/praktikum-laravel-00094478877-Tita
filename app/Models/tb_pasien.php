@@ -11,7 +11,12 @@ class tb_pasien extends Model
         'nama_lengkap',
         'email',
         'no_telepon',
+        'password',
+        'status_pasien',
+        'create_at',
         
+
+
 
     ];
 }

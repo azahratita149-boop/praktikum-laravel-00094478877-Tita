@@ -5,27 +5,29 @@ use Illuminate\Support\Facades\Auth;
 
 class PetugasController extends Controller
 {
+    public function login(){
+        return view(/'login');
+    }
    
 public function proseslogin(request $request){
 
 //validasi
 $request->validate{[
-    'email'->'required',
-    'password'->'required',
+    'email'=>'required',
+    'katasandi'=>'required',
 ]};
 
-}
 $ambildata=$request->only('email','katasandi');
 if(Auth::attempt($ambildata));
 {
-    $request=redirect()->interded('/dashboard');
+    tb_pasien::finds($ambildata)
+    redirect()->intended('/dashboard')
+};
+
+
 }
-else{
-    return back 
+
 }
-
-
-
 
 
 
