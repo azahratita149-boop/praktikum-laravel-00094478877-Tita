@@ -11,4 +11,9 @@ drop table 'tb_pasien'(
     'status_pasien' ENUM ('aktif','nonaktif') DEFAULT 'aktif',
     'create_at' TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     'update_at' TIMESTAMP DEFAULT CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP
-)engine=InnoDB DEFAULT CHARSET=Utf8mb4;
+)engine=InnoDB DEFAULT CHARSET=Utf8mb4; 
+
+INSERT INTO 'tb_pasien'('id_pasien','nama_lengkap','email','no_telepon','alamat','password','status_pasien')
+VALUES
+(1,'Rina Saftri','rina@gmail.com','081234567891','Jl.Merdeka Sehat No.10,Jakarta','','Aktif'),
+()
