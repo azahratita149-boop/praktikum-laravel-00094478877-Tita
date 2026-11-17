@@ -1,19 +1,23 @@
 <?php
 
+use App\Http\Controllers\PasienController;
+use App\Http\Controllers\PetugasController;
 use Illuminate\Http\Controller;
 
 use Illuminate\require;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/',function () {
-    return view('login');
+Route::get('/',function ()
+ {
+    return view('welcome');
 });
 
 
-Route::get('/login',[PetugasController::class,'login']);
-Route::post('/login',[PetugasController::class,'proseslogin']);
-route::get('/logout',)
+Route::get('/login',[PasienController::class,'login']);
+Route::post('/login',[PasienController::class,'proseslogin']);
 
-route::get('dashboard'
-    
-}
+route::get('/register',[PasienController::class,'regis']);
+route::get('/dashboard',function(){
+    return view('dashboard');
+});
+
